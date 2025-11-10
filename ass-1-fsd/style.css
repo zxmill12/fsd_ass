@@ -1,0 +1,25 @@
+/* External CSS File */
+
+/* Tag selector */
+label {
+  color: #333;
+}
+
+/* Class selector */
+.form-container input, 
+.form-container select {
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+/* Focus effect */
+.form-container input:focus, 
+.form-container select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+/* ID selector */
+#name {
+  background-color: #eef5ff;
+}

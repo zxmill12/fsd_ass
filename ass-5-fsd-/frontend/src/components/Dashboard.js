@@ -75,8 +75,8 @@ const Dashboard = () => {
               alt="User"
             />
             <div>
-              <h3> Gaurav Sunthwal</h3>
-              <p>Email: gaurav@example.com</p>
+              <h3> Atharv</h3>
+              <p>Email: atharv@gmail.com</p>
               <p>Joined: October 2025</p>
             </div>
           </div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Form Design</title>
+
+  <!-- External CSS (Bootstrap + Custom CSS) -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: #f5f7fa;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Tag selector */
+    h2 {
+      text-align: center;
+      color: #007bff;
+    }
+
+    /* Class selector */
+    .form-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* ID selector */
+    #submitBtn {
+      background-color: #28a745;
+      color: white;
+    }
+
+    #submitBtn:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Responsive Registration Form</h2>
+    <div class="form-container">
+      <form>
+        <!-- Inline CSS Example -->
+        <div class="mb-3">
+          <label for="name" class="form-label" style="font-weight:bold;">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gender</label><br>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </div>
+
+        <div class="mb-3">
+          <label for="course" class="form-label">Select Course</label>
+          <select class="form-select" id="course">
+            <option>Computer Engineering</option>
+            <option>Information Technology</option>
+            <option>AI & ML</option>
+          </select>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
